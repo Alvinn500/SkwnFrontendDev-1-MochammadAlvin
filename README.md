@@ -1,7 +1,6 @@
 # How to start project
 
-<=== Link Website ===>
-https://dekor.vercel.app/
+Link Website ===> https://dekor.vercel.app/
 
 1. npm i
 2. npm run dev
