@@ -1,0 +1,31 @@
+.cardProduct {
+    position: relative;
+}
+
+.cardProduct__img img {
+    height: 320px;
+    width: 250px;
+    border-radius: 10px;
+}
+
+.cardProduct__price {
+    bottom: 4.8rem;
+    left: 1rem;
+    font-size: .8rem;
+    padding: 6px 12px;
+    border-radius: 10px;
+    background-color: rgba(255, 255, 255, 0.50);
+}
+
+.cardProduct__title {
+    bottom: 1.4rem;
+    left: .4rem;
+    color: whitesmoke;
+    font-size: 1.8rem;
+    padding: 8px 14px;
+    border-radius: 10px
+}
+
+.cardProduct__position {
+    position: absolute;
+}

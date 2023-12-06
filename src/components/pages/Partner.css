@@ -1,0 +1,44 @@
+.partner {
+    padding: 80px 142px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.partner h1 {
+    font-size: 96px;
+    font-style: normal;
+    font-weight: 700;
+}
+
+.partner h3 {
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 400;
+}
+
+.partner__logo {
+    display: flex;
+    flex-wrap: wrap;
+    gap: 3rem;
+}
+
+@media screen and (max-width: 1024px) {
+    .partner {
+        padding-inline: 40px;
+        justify-content: center;
+        flex-wrap: wrap;
+    }
+
+    .partner__logo {
+        justify-content: center;
+    }
+
+    .partner__text {
+        text-align: center;
+    }
+
+    .partner__text {
+        font-size: 3rem;
+    }
+}

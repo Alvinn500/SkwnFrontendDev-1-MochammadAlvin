@@ -1,0 +1,156 @@
+.header {
+    position: relative;
+    max-width: 88%;
+    margin-inline: auto;
+}
+
+
+.header__nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-block: 20px;
+    padding-inline: 1rem;
+}
+
+.header__nav--humburger {
+    position: absolute;
+    right: 20px;
+    top: 50%;
+    transform: translateY(-50%);
+    background-color: transparent;
+    border: 0;
+    display: none;
+}
+
+.hamburger-active span:nth-child(1) {
+    width: 30px !important;
+}
+
+.hamburger-active span:nth-child(2) {
+    width: 40px !important;
+}
+
+.hamburger-active span:nth-child(3) {
+    width: 20px !important;
+}
+
+.header__nav--humburger span {
+    height: 4px;
+    background-color: black;
+    display: block;
+    margin-block: .5rem;
+}
+
+.header__nav--humburger span:nth-child(1) {
+    width: 20px;
+    transition: 500ms ease-in-out;
+}
+
+.header__nav--humburger span:nth-child(2) {
+    width: 40px;
+}
+
+.header__nav--humburger span:nth-child(3) {
+    width: 30px;
+    transition: 500ms ease-in-out;
+}
+
+.header__nav-logo {
+    display: flex;
+    align-items: center;
+}
+
+.header__nav-logo img {
+    margin-right: 1rem;
+    width: 48px;
+}
+
+.header__nav-list {
+    display: flex;
+    align-items: center;
+    gap: 1rem;
+}
+
+.nav-list--active {
+    top: 5.5rem !important;
+    display: block !important;
+}
+
+.header__nav-list li a {
+    display: flex;
+    align-items: center;
+    color: black;
+    font-weight: 500;
+    font-size: 16px;
+}
+
+.header__nav-button {
+    display: flex;
+    gap: 1rem;
+}
+
+.header__nav-button button {
+    padding: 8px 16px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+}
+
+.header__nav-button--sign-in {
+    background-color: #E5F0B6;
+    color: black;
+}
+
+.header__nav-button--bag {
+    background: #553B33;
+    color: whitesmoke;
+}
+
+
+@media screen and (max-width: 1024px) {
+    .header {
+        z-index: 5;
+    }
+
+    .header__nav-list {
+        display: block;
+        position: absolute;
+        top: -1000%;
+        left: 0;
+        /* left: 1000%; */
+        width: 100%;
+        border-radius: 15px;
+        padding: 1.8rem !important;
+        background-color: rgba(0, 0, 0, 0.85);
+        backdrop-filter: blur(5px);
+        padding-left: 1rem;
+        padding-block: 1.5rem;
+        transition: 900ms ease-in-out;
+        z-index: 1;
+    }
+
+    .header__nav-list li a {
+        font-size: 3rem;
+        color: whitesmoke;
+    }
+
+    .header__nav--humburger {
+        display: block;
+    }
+
+    .header__nav-button {
+        display: none;
+    }
+}
+
+@media screen and (max-width: 528px) {
+    .header {
+        max-width: 90%;
+    }
+
+    .header__nav-logo img {
+        width: 45px;
+    }
+
+}
